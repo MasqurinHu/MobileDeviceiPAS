@@ -14,9 +14,12 @@
 		4507AF401F1E757E00511BEB /* MobileDeviceiPAS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4507AF3E1F1E757E00511BEB /* MobileDeviceiPAS.xcdatamodeld */; };
 		4507AF421F1E757E00511BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4507AF411F1E757E00511BEB /* Assets.xcassets */; };
 		4507AF451F1E757E00511BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507AF431F1E757E00511BEB /* LaunchScreen.storyboard */; };
+		4507AF4E1F1E773C00511BEB /* ExamQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4507AF4D1F1E773C00511BEB /* ExamQuestions.m */; };
+		ED051C7D9159C52263C5F018 /* libPods-MobileDeviceiPAS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 482BF009BBFC87137C968F54 /* libPods-MobileDeviceiPAS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043DEAEB79B4E95693AF554D /* Pods-MobileDeviceiPAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileDeviceiPAS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileDeviceiPAS/Pods-MobileDeviceiPAS.release.xcconfig"; sourceTree = "<group>"; };
 		4507AF2F1F1E757D00511BEB /* MobileDeviceiPAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileDeviceiPAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4507AF331F1E757D00511BEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4507AF351F1E757D00511BEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +31,10 @@
 		4507AF411F1E757E00511BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4507AF441F1E757E00511BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4507AF461F1E757E00511BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4507AF4C1F1E773C00511BEB /* ExamQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamQuestions.h; sourceTree = "<group>"; };
+		4507AF4D1F1E773C00511BEB /* ExamQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamQuestions.m; sourceTree = "<group>"; };
+		482BF009BBFC87137C968F54 /* libPods-MobileDeviceiPAS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileDeviceiPAS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB42DE1A9BF9E50862F904CB /* Pods-MobileDeviceiPAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileDeviceiPAS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileDeviceiPAS/Pods-MobileDeviceiPAS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +42,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED051C7D9159C52263C5F018 /* libPods-MobileDeviceiPAS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36AA1A15FDDA0C11711F6CD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482BF009BBFC87137C968F54 /* libPods-MobileDeviceiPAS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4507AF261F1E757D00511BEB = {
 			isa = PBXGroup;
 			children = (
 				4507AF311F1E757D00511BEB /* MobileDeviceiPAS */,
 				4507AF301F1E757D00511BEB /* Products */,
+				DB5702E55188387DA118B4F4 /* Pods */,
+				36AA1A15FDDA0C11711F6CD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +82,8 @@
 				4507AF361F1E757D00511BEB /* AppDelegate.m */,
 				4507AF381F1E757D00511BEB /* ViewController.h */,
 				4507AF391F1E757D00511BEB /* ViewController.m */,
+				4507AF4C1F1E773C00511BEB /* ExamQuestions.h */,
+				4507AF4D1F1E773C00511BEB /* ExamQuestions.m */,
 				4507AF3B1F1E757E00511BEB /* Main.storyboard */,
 				4507AF411F1E757E00511BEB /* Assets.xcassets */,
 				4507AF431F1E757E00511BEB /* LaunchScreen.storyboard */,
@@ -82,6 +102,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DB5702E55188387DA118B4F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB42DE1A9BF9E50862F904CB /* Pods-MobileDeviceiPAS.debug.xcconfig */,
+				043DEAEB79B4E95693AF554D /* Pods-MobileDeviceiPAS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4507AF491F1E757E00511BEB /* Build configuration list for PBXNativeTarget "MobileDeviceiPAS" */;
 			buildPhases = (
+				561975CAB71B591DF3142BD0 /* [CP] Check Pods Manifest.lock */,
 				4507AF2B1F1E757D00511BEB /* Sources */,
 				4507AF2C1F1E757D00511BEB /* Frameworks */,
 				4507AF2D1F1E757D00511BEB /* Resources */,
+				507502DC9A11A239C522D5BB /* [CP] Embed Pods Frameworks */,
+				EB4EA32CF9BA3DB3FB3A0793 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +181,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		507502DC9A11A239C522D5BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileDeviceiPAS/Pods-MobileDeviceiPAS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		561975CAB71B591DF3142BD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4EA32CF9BA3DB3FB3A0793 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileDeviceiPAS/Pods-MobileDeviceiPAS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4507AF2B1F1E757D00511BEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -158,6 +238,7 @@
 				4507AF371F1E757D00511BEB /* AppDelegate.m in Sources */,
 				4507AF401F1E757E00511BEB /* MobileDeviceiPAS.xcdatamodeld in Sources */,
 				4507AF341F1E757D00511BEB /* main.m in Sources */,
+				4507AF4E1F1E773C00511BEB /* ExamQuestions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +358,7 @@
 		};
 		4507AF4A1F1E757E00511BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB42DE1A9BF9E50862F904CB /* Pods-MobileDeviceiPAS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J46ZPGV247;
@@ -289,6 +371,7 @@
 		};
 		4507AF4B1F1E757E00511BEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043DEAEB79B4E95693AF554D /* Pods-MobileDeviceiPAS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J46ZPGV247;
@@ -318,6 +401,7 @@
 				4507AF4B1F1E757E00511BEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
